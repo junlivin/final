@@ -184,6 +184,7 @@ p{
 
 ul{
   justify-content: flex-start;
+  padding: 5px;
 }
 
 li:hover{
