@@ -147,7 +147,7 @@ ul{
   overflow: hidden;
 }
 
-.scene{
+.scene, #sceneSecond{
   width: 100%;
   overflow:hidden;
 }
