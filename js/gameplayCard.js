@@ -36,38 +36,38 @@
 
           switch (e.target.id){
           case "angry":
-            ScreenTwoVid.src = "/video/lose card.mp4";
+            ScreenTwoVid.src = "video/lose card.mp4";
             ScreenTwoVid.play()
             ScreenTwoVid.onended = function(){
                 jumpToScreenOne.click();
-                ScreenOneVid.src = "/video/wolfLose.mp4";
+                ScreenOneVid.src = "video/wolfLose.mp4";
                 ScreenOneVid.play();
                }
               break;
             case "smile":
-              ScreenTwoVid.src = "/video/win.mp4";
+              ScreenTwoVid.src = "video/win.mp4";
               ScreenTwoVid.play()
               ScreenTwoVid.onended = function(){
                 jumpToScreenOne.click();
-                ScreenOneVid.src = "/video/wolfWin.mp4";
+                ScreenOneVid.src = "video/wolfWin.mp4";
                 ScreenOneVid.play();
                }
               break;
             case "roll":
-              ScreenTwoVid.src = "/video/lose card.mp4";
+              ScreenTwoVid.src = "video/lose card.mp4";
               ScreenTwoVid.play()
               ScreenTwoVid.onended = function(){
                 jumpToScreenOne.click();
-                ScreenOneVid.src = "/video/wolfLose.mp4";
+                ScreenOneVid.src = "video/wolfLose.mp4";
                 ScreenOneVid.play();
                }
               break;
             case "indifferent":
-              ScreenTwoVid.src = "/video/lose card.mp4";
+              ScreenTwoVid.src = "video/lose card.mp4";
               ScreenTwoVid.play()
               ScreenTwoVid.onended = function(){
                 jumpToScreenOne.click();
-                ScreenOneVid.src = "/video/wolfLose.mp4";
+                ScreenOneVid.src = "video/wolfLose.mp4";
                 ScreenOneVid.play();
                }
               break;

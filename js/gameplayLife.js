@@ -35,38 +35,38 @@
 
           switch (e.target.id){
           case "angry":
-            ScreenTwoVid.src = "/video/no.mp4";
+            ScreenTwoVid.src = "video/no.mp4";
             ScreenTwoVid.play()
             ScreenTwoVid.onended = function(){
                 jumpToScreenOne.click();
-                ScreenOneVid.src = "/video/BridgeLose.mp4";
+                ScreenOneVid.src = "video/BridgeLose.mp4";
                 ScreenOneVid.play();
                }
               break;
             case "smile":
-              ScreenTwoVid.src = "/video/ok.mp4";
+              ScreenTwoVid.src = "video/ok.mp4";
               ScreenTwoVid.play()
               ScreenTwoVid.onended = function(){
                 jumpToScreenOne.click();
-                ScreenOneVid.src = "/video/Bridgewin.mp4";
+                ScreenOneVid.src = "video/Bridgewin.mp4";
                 ScreenOneVid.play();
                }
               break;
             case "roll":
-              ScreenTwoVid.src = "/video/no.mp4";
+              ScreenTwoVid.src = "video/no.mp4";
               ScreenTwoVid.play()
               ScreenTwoVid.onended = function(){
                 jumpToScreenOne.click();
-                ScreenOneVid.src = "/video/BridgeLose.mp4";
+                ScreenOneVid.src = "video/BridgeLose.mp4";
                 ScreenOneVid.play();
                }
               break;
             case "indifferent":
-              ScreenTwoVid.src = "/video/no.mp4";
+              ScreenTwoVid.src = "video/no.mp4";
               ScreenTwoVid.play()
               ScreenTwoVid.onended = function(){
                 jumpToScreenOne.click();
-                ScreenOneVid.src = "/video/BridgeLose.mp4";
+                ScreenOneVid.src = "video/BridgeLose.mp4";
                 ScreenOneVid.play();
                }
               break;
