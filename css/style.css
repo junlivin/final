@@ -1,0 +1,182 @@
+
+@import url('clash-display.css');
+
+/* font-family: 'ClashDisplay-Variable';
+font-family: 'ClashDisplay-Extralight';
+font-family: 'ClashDisplay-Light';
+font-family: 'ClashDisplay-Regular';
+font-family: 'ClashDisplay-Medium';
+font-family: 'ClashDisplay-Semibold';
+font-family: 'ClashDisplay-Bold'; */
+
+body{
+  background-color: #f8eeec;
+  cursor: url('../images/cursor.png'), auto;
+}
+
+.Scene{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    align-content: center;
+    align-items: center;
+    margin: 50px;
+    border: 4px solid #666;
+    background-color: #e7e9fe;
+
+}
+
+.sceneTwoButtons{
+  display: flex;
+  flex-direction: row;
+}
+
+#smile, #angry, #roll, #indifferent{
+  font-size:48px;
+  padding: 0 20px;
+}
+
+h1{
+  font-weight: bold;
+  font-family: 'Public Pixel', sans-serif;
+  color: purple;
+  font-size: 40px;
+  background-color: lightblue;
+}
+
+.skip{
+    position: absolute;
+    top: -40px;
+  }
+
+video {
+    width: 90%;
+  }
+
+button, li, h2, .letsplay{
+    font-family: 'PIXEL CRAFT', sans-serif;
+    font-size: 24px;
+    padding: .85rem 2rem;
+    color: blueviolet;
+}
+
+button, .letsplay{
+  border: 5px black solid;
+  margin: 10px;
+  background-color: transparent;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 10px #999;
+}
+
+button:active, .letsplay:active {
+  transform: translateY(4px);
+  box-shadow: 0 5px #666;
+}
+
+li{
+  display: inline-block;
+}
+
+li:hover{
+  background-color: lightblue;
+  border-radius: 20px;
+}
+
+button:hover, .letsplay:hover{
+  background-color: lightblue;
+}
+
+.sceneTwoButtons button:hover + .hinttext{
+  display: inline-block;
+}
+
+/* #jumpToScreenTwo, #jumpToScreenOne{
+  visibility: hidden;
+} */
+
+a{
+  text-decoration: none;
+  color: purple;
+}
+
+p{
+  font-family: 'Public Pixel', sans-serif;
+  font-size: 18px;
+}
+
+.hinttext{
+  font-family: 'Public Pixel', sans-serif;
+  width: auto;
+  color: white;
+  background-color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  left: 120px;
+  display: none;
+}
+
+.sceneTwoButtons{
+  visibility: hidden;
+}
+
+.pagebuttomThree img, .pagetop img, .pagebuttom img{
+  height: 107px;
+  width: 100%;
+}
+
+/* .pagebuttom, .pagebuttomThree{
+  position: relative;
+  bottom: 0;
+} */
+
+ul{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo{
+  display: block;
+  margin: auto;
+  height: 50px;
+  overflow: hidden;
+}
+
+.scene{
+  width: 100%;
+  overflow:hidden;
+}
+
+@media screen and (max-width:1200px){
+  h1{
+    font-size: 18px;
+  }
+
+  button, li, h2, .letsplay, p{
+    font-size: 14px;
+    padding: .85rem 2rem;
+    color: blueviolet;
+}
+
+#smile, #angry, #roll, #indifferent{
+  font-size: 28px;
+  padding: 0 20px;
+}
+
+.logo{
+  height: 20px;
+}
+
+.pagebuttomThree img, .pagetop img, .pagebuttom img{
+  height: auto;
+}
+
+p{
+  overflow: auto;
+}
+
+}
