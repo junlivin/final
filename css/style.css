@@ -179,4 +179,9 @@ p{
   overflow: auto;
 }
 
+ul{
+  justify-content: flex-start;
+  padding: 0 10px;
+}
+
 }
