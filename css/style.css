@@ -190,4 +190,8 @@ li:hover{
   border-radius: 10px;
 }
 
+li{
+  padding: 10px;
+}
+
 }
