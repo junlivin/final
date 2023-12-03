@@ -15,10 +15,11 @@
     })
 
     ScreenOneVid.onended = function(){
-      if (firstTime == true)
+      if (firstTime == true){
         jumpToScreenTwo.click();
         ScreenTwoVid.play();
         firstTime = false;
+      }
      }
 
       buttonOne.addEventListener('click', function(e){
