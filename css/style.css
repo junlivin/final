@@ -49,10 +49,6 @@ h1{
     top: -40px;
   }
 
-video {
-  width: 100%;
-  overflow:hidden;
-  }
 
 button, li, h2, .letsplay{
     font-family: 'PIXEL CRAFT', sans-serif;
@@ -147,7 +143,7 @@ ul{
   overflow: hidden;
 }
 
-.scene, #sceneSecond{
+.scene, #sceneSecond, video{
   width: 100%;
   overflow:hidden;
 }
