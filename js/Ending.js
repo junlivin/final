@@ -6,6 +6,8 @@
   let buttonOne = document.getElementById('playSceneOne')
   let firstTime = true;
 
+  document.querySelector(".sceneTwoButtons").style.visibility = "visible";
+
     (function (){
       [].forEach.call(document.getElementsByClassName('sceneTwoButtons'), function(btn) {
         btn.addEventListener('click', function(e) {
