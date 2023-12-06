@@ -100,8 +100,11 @@ a{
 p{
   font-family: 'Public Pixel', sans-serif;
   font-size: 10px;
-  line-height: 20px;
+  line-height: 25px;
+  padding: .85rem 2rem;
+  color: blueviolet;
 }
+
 
 .hinttext{
   font-family: 'Public Pixel', sans-serif;
@@ -188,8 +191,6 @@ p{
   }
 
   p{
-    padding: .85rem 2rem;
-    color: blueviolet;
     line-height: 50px;
   }
 
@@ -201,9 +202,6 @@ p{
 
 ul{
   display: flex;
-}
-
-ul{
   justify-content: space-between;
   padding: 0 20px;
   align-items: center;
