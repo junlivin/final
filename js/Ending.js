@@ -1,4 +1,3 @@
-
   var ScreenTwoVid = document.getElementById("sceneSecond");
   var ScreenOneVid = document.getElementById("sceneFirst");
   let jumpToScreenTwo = document.getElementById('jumpToScreenTwo');
@@ -6,10 +5,10 @@
   let buttonOne = document.getElementById('playSceneOne')
   let firstTime = true;
 
-  document.querySelector(".sceneTwoButtons").style.visibility = "visible";
+  document.querySelector(".finalButtons").style.visibility = "visible";
 
     (function (){
-      [].forEach.call(document.getElementsByClassName('sceneTwoButtons'), function(btn) {
+      [].forEach.call(document.getElementsByClassName('finalButtons'), function(btn) {
         btn.addEventListener('click', function(e) {
 
           switch (e.target.id){
@@ -34,4 +33,3 @@
             })
         })
       }())
-
