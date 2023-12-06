@@ -51,6 +51,7 @@ video, .scene, #sceneSecond{
   overflow: hidden;
   }
 
+
 button, li, h2, .letsplay{
     font-family: 'PIXEL CRAFT', sans-serif;
     font-size: 10px;
@@ -85,9 +86,10 @@ button:hover, .letsplay:hover{
   background-color: lightblue;
 }
 
-/* #jumpToScreenTwo, #jumpToScreenOne{
-  visibility: hidden;
-} */
+video::-webkit-media-controls-fullscreen-button
+{
+        display: none !important;
+}
 
 a{
   text-decoration: none;
@@ -97,6 +99,7 @@ a{
 p{
   font-family: 'Public Pixel', sans-serif;
   font-size: 10px;
+  line-height: 20px;
 }
 
 .hinttext{
