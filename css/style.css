@@ -222,10 +222,6 @@ li{
   flex-direction: row;
 }
 
-#smile, #angry, #roll, #indifferent{
-  font-size: 28px;
-}
-
 .sceneTwoButtons button:hover + .hinttext{
   display: inline-block;
 }
