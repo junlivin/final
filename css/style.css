@@ -20,7 +20,7 @@ body{
     grid-template-columns: 1fr;
     align-content: center;
     align-items: center;
-    margin: 50px;
+    margin: 10px;
     border: 4px solid #666;
     background-color: #e7e9fe;
 
@@ -29,18 +29,19 @@ body{
 .sceneTwoButtons{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 #smile, #angry, #roll, #indifferent{
-  font-size:48px;
-  padding: 0 20px;
+  font-size: 6px;
 }
 
 h1{
   font-weight: bold;
   font-family: 'Public Pixel', sans-serif;
+  font-size: 18px;
   color: purple;
-  font-size: 40px;
   background-color: lightblue;
 }
 
@@ -56,13 +57,13 @@ video, .scene, #sceneSecond{
 
 button, li, h2, .letsplay{
     font-family: 'PIXEL CRAFT', sans-serif;
-    font-size: 24px;
-    padding: .85rem 2rem;
+    font-size: 10px;
+    padding: 5px;
     color: blueviolet;
 }
 
 button, .letsplay{
-  border: 5px black solid;
+  border: 2px black solid;
   margin: 10px;
   background-color: transparent;
   border-radius: 40px;
@@ -81,15 +82,11 @@ li{
 
 li:hover{
   background-color: lightblue;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 button:hover, .letsplay:hover{
   background-color: lightblue;
-}
-
-.sceneTwoButtons button:hover + .hinttext{
-  display: inline-block;
 }
 
 /* #jumpToScreenTwo, #jumpToScreenOne{
@@ -124,7 +121,6 @@ p{
 }
 
 .pagebuttomThree img, .pagetop img, .pagebuttom img{
-  height: 107px;
   width: 100%;
 }
 
@@ -134,59 +130,85 @@ p{
 } */
 
 ul{
-  display: flex;
-  flex-direction:row;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-
-.logo{
-  display: block;
-  margin: auto;
-  height: 50px;
-  overflow: hidden;
-}
-
-
-@media screen and (max-width:1200px){
-  h1{
-    font-size: 18px;
-  }
-
-  button, li, h2, .letsplay, p{
-    font-size: 14px;
-    padding: .85rem 2rem;
-    color: blueviolet;
-}
-
-#smile, #angry, #roll, #indifferent{
-  font-size: 28px;
-  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5px;
+  justify-items: center;
 }
 
 .logo{
   height: 20px;
-}
-
-.pagebuttomThree img, .pagetop img, .pagebuttom img{
-  height: auto;
+  overflow: hidden;
 }
 
 p{
   overflow: auto;
 }
 
+.logoC{
+  grid-column: 1 / -1;
+}
+
+
+@media screen and (min-width:900px){
+  h1{
+    font-size: 40px;
+  }
+
+  button, li, h2, .letsplay, p{
+    font-size: 24px;
+  }
+
+  p{
+    padding: .85rem 2rem;
+    color: blueviolet;
+  }
+
+
+  #smile, #angry, #roll, #indifferent{
+    font-size:48px;
+  }
+
+.logo{
+  height: 50px;
+}
+
 ul{
-  justify-content: flex-start;
-  padding: 5px;
+  display: flex;
+}
+
+ul{
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
 }
 
 li:hover{
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 li{
-  padding: 10px;
+  padding: 10px 20px;
 }
 
+.sceneTwoButtons{
+  display: flex;
+  flex-direction: row;
+}
+
+#smile, #angry, #roll, #indifferent{
+  font-size: 28px;
+}
+
+button, .letsplay{
+  border: 5px black solid;
+  padding: 10px 20px;}
+
+.sceneTwoButtons button:hover + .hinttext{
+  display: inline-block;
+}
+
+.scene{
+  margin: 50px;
+}
 }
