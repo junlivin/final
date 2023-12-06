@@ -36,7 +36,7 @@
 
           switch (e.target.id){
           case "angry":
-            ScreenTwoVid.src = "video/lose card.mp4";
+            ScreenTwoVid.src = "video/loseCard.mp4";
             ScreenTwoVid.play()
             ScreenTwoVid.onended = function(){
                 jumpToScreenOne.click();
@@ -54,7 +54,7 @@
                }
               break;
             case "roll":
-              ScreenTwoVid.src = "video/lose card.mp4";
+              ScreenTwoVid.src = "video/loseCard.mp4";
               ScreenTwoVid.play()
               ScreenTwoVid.onended = function(){
                 jumpToScreenOne.click();
@@ -63,7 +63,7 @@
                }
               break;
             case "indifferent":
-              ScreenTwoVid.src = "video/lose card.mp4";
+              ScreenTwoVid.src = "video/loseCard.mp4";
               ScreenTwoVid.play()
               ScreenTwoVid.onended = function(){
                 jumpToScreenOne.click();

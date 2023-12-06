@@ -14,9 +14,11 @@
 
           switch (e.target.id){
           case "angry":
+            ScreenTwoVid.src = "video/mountainView.mp4";
             ScreenTwoVid.play()
               break;
             case "smile":
+              ScreenTwoVid.src = "video/mountainView.mp4";
               ScreenTwoVid.play()
               break;
             case "roll":
@@ -24,6 +26,7 @@
               ScreenTwoVid.play()
               break;
             case "indifferent":
+              ScreenTwoVid.src = "video/mountainView.mp4";
               ScreenTwoVid.play()
               break;
             default:
