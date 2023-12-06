@@ -26,6 +26,12 @@ body{
 
 }
 
+.finalButtons{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
 .sceneTwoButtons{
   display: flex;
   flex-direction: row;
@@ -86,11 +92,6 @@ button:hover, .letsplay:hover{
   background-color: lightblue;
 }
 
-video::-webkit-media-controls-fullscreen-button
-{
-        display: none !important;
-}
-
 a{
   text-decoration: none;
   color: purple;
@@ -136,7 +137,7 @@ ul{
 }
 
 .logo{
-  height: 20px;
+  height: 30px;
   overflow: hidden;
 }
 
@@ -149,10 +150,35 @@ p{
 }
 
 #smile, #angry, #roll, #indifferent{
-  font-size: 20px;
+  font-size: 18px;
 }
 
-@media screen and (min-width:900px){
+
+@media screen and (min-width:600px){
+  h1{
+    font-size: 28px;
+  }
+
+
+  button, li, h2, .letsplay, p{
+    font-size: 18px;
+  }
+
+  .logo{
+    height: 50px;
+  }
+
+  #smile, #angry, #roll, #indifferent{
+    font-size: 30px;
+  }
+
+  button, .letsplay{
+    border: 5px black solid;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (min-width:950px){
   h1{
     font-size: 40px;
   }
@@ -164,6 +190,7 @@ p{
   p{
     padding: .85rem 2rem;
     color: blueviolet;
+    line-height: 50px;
   }
 
 
@@ -171,9 +198,6 @@ p{
     font-size:48px;
   }
 
-.logo{
-  height: 50px;
-}
 
 ul{
   display: flex;
@@ -202,16 +226,18 @@ li{
   font-size: 28px;
 }
 
-button, .letsplay{
-  border: 5px black solid;
-  padding: 10px 20px;
-}
-
 .sceneTwoButtons button:hover + .hinttext{
   display: inline-block;
 }
 
 .scene{
   margin: 50px;
+}
+
+.finalButtons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 }
